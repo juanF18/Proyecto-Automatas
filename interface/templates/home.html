@@ -1,1 +1,111 @@
-<h1>soy home</h1>
+{% extends 'layout.html' %} {% block content %}
+<div>
+  <form>
+    <div>
+      <h1>Generador de automatas</h1>
+
+      <label for="automata">Ingrese el automata</label>
+      <input type="text" />
+    </div>
+    <div>
+      <label for="instrumento">Seleccione el instrumentos</label>
+      <select name="instrumento1" id="isntrumento1">
+        <option value="1">guitarra</option>
+        <option value="2">bateria</option>
+        <option value="3">bajo</option>
+        <option value="4">saxofon</option>
+      </select>
+      <select name="instrumento2" id="isntrumento2">
+        <option value="1">guitarra</option>
+        <option value="2">bateria</option>
+        <option value="3">bajo</option>
+        <option value="4">saxofon</option>
+      </select>
+      <select name="instrumento3" id="isntrumento3">
+        <option value="1">guitarra</option>
+        <option value="2">bateria</option>
+        <option value="3">bajo</option>
+        <option value="4">saxofon</option>
+      </select>
+    </div>
+  </form>
+</div>
+<div>
+  <form>
+    <label for="notas">Seleccione las notas</label>
+
+    <div>
+      <select name="nota1" id="nota1">
+        <option value="1">do</option>
+        <option value="2">re</option>
+        <option value="3">mi</option>
+        <option value="4">fa</option>
+      </select>
+      <select name="nota2" id="nota2">
+        <option value="1">do</option>
+        <option value="2">re</option>
+        <option value="3">mi</option>
+        <option value="4">fa</option>
+      </select>
+      <select name="nota3" id="nota4">
+        <option value="1">do</option>
+        <option value="2">re</option>
+        <option value="3">mi</option>
+        <option value="4">fa</option>
+      </select>
+    </div>
+
+    <div>
+      <select name="nota4" id="nota4">
+        <option value="1">do</option>
+        <option value="2">re</option>
+        <option value="3">mi</option>
+        <option value="4">fa</option>
+      </select>
+      <select name="nota5" id="nota5">
+        <option value="1">do</option>
+        <option value="2">re</option>
+        <option value="3">mi</option>
+        <option value="4">fa</option>
+      </select>
+      <select name="nota6" id="nota6">
+        <option value="1">do</option>
+        <option value="2">re</option>
+        <option value="3">mi</option>
+        <option value="4">fa</option>
+      </select>
+    </div>
+
+    <div>
+      <select name="nota7" id="nota7">
+        <option value="1">do</option>
+        <option value="2">re</option>
+        <option value="3">mi</option>
+        <option value="4">fa</option>
+      </select>
+      <select name="nota8" id="nota8">
+        <option value="1">do</option>
+        <option value="2">re</option>
+        <option value="3">mi</option>
+        <option value="4">fa</option>
+      </select>
+      <select name="nota9" id="nota9">
+        <option value="1">do</option>
+        <option value="2">re</option>
+        <option value="3">mi</option>
+        <option value="4">fa</option>
+      </select>
+    </div>
+    <div>
+      <label for="frontera">Seleccione Frontera</label>
+      <select name="frontera" id="frontera">
+        <option value="1">Circular</option>
+        <option value="2">Espejo</option>
+        <option value="3">Manual</option>
+      </select>
+    </div>
+  </form>
+  <button>Ejecutar automata</button>
+</div>
+
+{% endblock %}
