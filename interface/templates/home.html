@@ -1,109 +1,155 @@
 {% extends 'layout.html' %} {% block content %}
-  <form>
-    <div>
-      <h1>Generador de automatas</h1>
 
-      <label for="automata">Ingrese el automata</label>
-      <input type="text" />
+<div class="container mt-10" id="primario">
+  <h1>Generador de automatas</h1>
+  <div class="row g-2">
+    <div class="col-12">
+      <div class="p-3 border bg-light">
+        <div class="row gx-5">
+          <div class="col">
+            <div class="p-3 bg-light">
+              <label for="automata" class="form-label"
+                >Ingrese el automata</label
+              >
+              <input type="text" class="form-control" />
+            </div>
+          </div>
+          <div class="col">
+            <div class="p-3 bg-light">
+              <button>Aleatorio</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div>
-      <label for="instrumento">Seleccione el instrumentos</label>
-      <select name="instrumento1" id="isntrumento1">
-        <option value="1">guitarra</option>
-        <option value="2">bateria</option>
-        <option value="3">bajo</option>
-        <option value="4">saxofon</option>
-      </select>
-      <select name="instrumento2" id="isntrumento2">
-        <option value="1">guitarra</option>
-        <option value="2">bateria</option>
-        <option value="3">bajo</option>
-        <option value="4">saxofon</option>
-      </select>
-      <select name="instrumento3" id="isntrumento3">
-        <option value="1">guitarra</option>
-        <option value="2">bateria</option>
-        <option value="3">bajo</option>
-        <option value="4">saxofon</option>
-      </select>
+    <div class="col-4">
+      <div class="p-3 border bg-light">
+        <label for="instrumento" class="form-label"
+          >Seleccione el instrumentos</label
+        >
+        <select name="instrumento1" id="isntrumento1" class="form-select mb-3">
+          <option value="1">guitarra</option>
+          <option value="2">bateria</option>
+          <option value="3">bajo</option>
+          <option value="4">saxofon</option>
+        </select>
+        <select name="instrumento2" id="isntrumento2" class="form-select mb-3">
+          <option value="1">guitarra</option>
+          <option value="2">bateria</option>
+          <option value="3">bajo</option>
+          <option value="4">saxofon</option>
+        </select>
+        <select name="instrumento3" id="isntrumento3" class="form-select mb-3">
+          <option value="1">guitarra</option>
+          <option value="2">bateria</option>
+          <option value="3">bajo</option>
+          <option value="4">saxofon</option>
+        </select>
+      </div>
     </div>
-  </form>
+    <div class="col-4">
+      <div class="p-3 border bg-light">
+        <label for="notas" class="label-control">
+          Seleccione 3 notas para reproducir
+        </label>
+        <div class="row">
+          <div class="col">
+            <select name="nota1" id="nota1" class="form-select mb-3">
+              <option value="1">do</option>
+              <option value="2">re</option>
+              <option value="3">mi</option>
+              <option value="4">fa</option>
+            </select>
+          </div>
+          <div class="col">
+            <select name="nota2" id="nota2" class="form-select mb-3">
+              <option value="1">do</option>
+              <option value="2">re</option>
+              <option value="3">mi</option>
+              <option value="4">fa</option>
+            </select>
+          </div>
+          <div class="col">
+            <select name="nota3" id="nota3" class="form-select mb-3">
+              <option value="1">do</option>
+              <option value="2">re</option>
+              <option value="3">mi</option>
+              <option value="4">fa</option>
+            </select>
+          </div>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col">
+            <select name="nota4" id="nota4" class="form-select mb-3">
+              <option value="1">do</option>
+              <option value="2">re</option>
+              <option value="3">mi</option>
+              <option value="4">fa</option>
+            </select>
+          </div>
+          <div class="col">
+            <select name="nota5" id="nota5" class="form-select mb-3">
+              <option value="1">do</option>
+              <option value="2">re</option>
+              <option value="3">mi</option>
+              <option value="4">fa</option>
+            </select>
+          </div>
+          <div class="col">
+            <select name="nota6" id="nota6" class="form-select mb-3">
+              <option value="1">do</option>
+              <option value="2">re</option>
+              <option value="3">mi</option>
+              <option value="4">fa</option>
+            </select>
+          </div>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col">
+            <select name="nota7" id="nota7" class="form-select mb-3">
+              <option value="1">do</option>
+              <option value="2">re</option>
+              <option value="3">mi</option>
+              <option value="4">fa</option>
+            </select>
+          </div>
+          <div class="col">
+            <select name="nota8" id="nota8" class="form-select mb-3">
+              <option value="1">do</option>
+              <option value="2">re</option>
+              <option value="3">mi</option>
+              <option value="4">fa</option>
+            </select>
+          </div>
+          <div class="col">
+            <select name="nota9" id="nota9" class="form-select mb-3">
+              <option value="1">do</option>
+              <option value="2">re</option>
+              <option value="3">mi</option>
+              <option value="4">fa</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="p-3 border bg-light">
+        <label for="frontera" class="label-control">
+          Seleccione la frontera
+        </label>
+        <br />
+        <select name="frontera" id="frontera" class="form-select mb-3">
+          <option value="1">Circular</option>
+          <option value="2">Espejo</option>
+          <option value="3">Manual</option>
+        </select>
+      </div>
+    </div>
+  </div>
 </div>
-<div>
-  <form>
-    <label for="notas">Seleccione las notas</label>
-
-    <div>
-      <select name="nota1" id="nota1">
-        <option value="1">do</option>
-        <option value="2">re</option>
-        <option value="3">mi</option>
-        <option value="4">fa</option>
-      </select>
-      <select name="nota2" id="nota2">
-        <option value="1">do</option>
-        <option value="2">re</option>
-        <option value="3">mi</option>
-        <option value="4">fa</option>
-      </select>
-      <select name="nota3" id="nota4">
-        <option value="1">do</option>
-        <option value="2">re</option>
-        <option value="3">mi</option>
-        <option value="4">fa</option>
-      </select>
-    </div>
-
-    <div>
-      <select name="nota4" id="nota4">
-        <option value="1">do</option>
-        <option value="2">re</option>
-        <option value="3">mi</option>
-        <option value="4">fa</option>
-      </select>
-      <select name="nota5" id="nota5">
-        <option value="1">do</option>
-        <option value="2">re</option>
-        <option value="3">mi</option>
-        <option value="4">fa</option>
-      </select>
-      <select name="nota6" id="nota6">
-        <option value="1">do</option>
-        <option value="2">re</option>
-        <option value="3">mi</option>
-        <option value="4">fa</option>
-      </select>
-    </div>
-
-    <div>
-      <select name="nota7" id="nota7">
-        <option value="1">do</option>
-        <option value="2">re</option>
-        <option value="3">mi</option>
-        <option value="4">fa</option>
-      </select>
-      <select name="nota8" id="nota8">
-        <option value="1">do</option>
-        <option value="2">re</option>
-        <option value="3">mi</option>
-        <option value="4">fa</option>
-      </select>
-      <select name="nota9" id="nota9">
-        <option value="1">do</option>
-        <option value="2">re</option>
-        <option value="3">mi</option>
-        <option value="4">fa</option>
-      </select>
-    </div>
-    <div>
-      <label for="frontera">Seleccione Frontera</label>
-      <select name="frontera" id="frontera">
-        <option value="1">Circular</option>
-        <option value="2">Espejo</option>
-        <option value="3">Manual</option>
-      </select>
-    </div>
-  </form>
-  <button>Ejecutar automata</button>
-
+<div class="d-grid gap-2">
+  <button class="btn btn-success" type="button">Ejecutar</button>
+</div>
 {% endblock %}
